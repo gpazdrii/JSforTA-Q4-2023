@@ -86,7 +86,7 @@ console.log(findUnique([1, 2, 3, 5, 11]))
 
 // Task 7
 function lastElem (arr, elNumber) {
-  if (elNumber == undefined) {
+  if (elNumber === undefined) {
     elNumber = 1
     return arr[arr.length - 1]
   } else {
