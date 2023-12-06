@@ -31,7 +31,9 @@ console.log(mul(null, 'str', false, true)) // 0
 const server = {
   data: 0,
   convertToString: function (callback) {
-    callback(() => this.data + '')
+    callback(() => {
+      return this.data + ''
+    })
   }
 }
 const client = {
