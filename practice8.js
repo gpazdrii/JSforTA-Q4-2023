@@ -30,8 +30,8 @@ console.log(mul(null, 'str', false, true)) // 0
 // Task 4
 const server = {
   data: 0,
-  convertToString: function (func) {
-    func(() => this.data + '')
+  convertToString: function (callback) {
+    callback(() => this.data + '')
   }
 }
 const client = {
